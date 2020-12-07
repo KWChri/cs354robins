@@ -1,4 +1,0 @@
-class Hand
-
-
-end
