@@ -13,7 +13,6 @@ class Card_Dealer
     @players.each do |player|
       for i in 0...cards
         player.hand[i] = @deck.pop()
-        puts "adding card #{i} to hand"
       end
       #print player.hand
     end
@@ -22,6 +21,7 @@ class Card_Dealer
   def display_hand(name)
     @players.each do |player|
       if player.name == name
+        puts "#{player.name}'s hand"
         print player.hand
         puts
       end
