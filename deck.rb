@@ -30,6 +30,10 @@ class Deck
       @Deck.pop()
     end
 
+    def length
+      @Deck.length()
+    end
+
     def display_deck
         print @Deck
     end

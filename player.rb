@@ -8,4 +8,8 @@ class Player
     @hand = []
     @score = 0
   end
+
+  def length
+    @hand.length()
+  end
 end

@@ -27,4 +27,23 @@ class Card_Dealer
       end
     end
   end
+  
+  def draw(name)
+    @players.each do |player|
+      if player.name == name
+        player.hand << @deck.pop()
+      end
+    end
+  end
+
+  def play(name, i)
+    @players.each do |player|
+      if player.name == name
+      print "Playing card: "
+      print player.hand[i]
+      puts
+      player.hand.delete_at(i)
+      end
+    end
+  end
 end
